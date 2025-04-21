@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pembayaran Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Pembayaran Panel</h1>
+  <input type="text" id="username" placeholder="Username">
+  <select id="pilihRam">
+    <option value="1gb">1 GB</option>
+    <option value="2gb">2 GB</option>
+    <option value="unli">Unlimited</option>
+  </select>
+  <button onclick="buatPembayaran()">Bayar Sekarang</button>
+
+  <div id="infoPembayaran" class="hidden">
+    <img id="qrImage" src="" alt="QRIS">
+    <pre id="detailPembayaran"></pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
